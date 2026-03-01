@@ -1,0 +1,36 @@
+@use './fonts' as *;
+@use './basic/variables' as *;
+
+body {
+  margin: 0;
+  padding: 0;
+
+  @include huge {
+    margin: 0 10%;
+  }
+}
+
+#preloader {
+  position: fixed;
+  display: flex;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  background: #0b0d12;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgb(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

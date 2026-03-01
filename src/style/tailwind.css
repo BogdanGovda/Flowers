@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-blackBg: #333;
+  --color-purpleLight: #956d84;
+}
+
+@theme {
+  --font-acme: 'Acme', sans-serif;
+  --font-sans: 'PT Sans', sans-serif;
+  --font-actor: 'Actor', sans-serif;
+}
+
+@theme {
+  --breakpoint-huge: 2000px;
+
+  --breakpoint-big-max: 1999px;
+  --breakpoint-desktop-max: 1750px;
+  --breakpoint-laptop-max: 1440px;
+  --breakpoint-table-big-max: 1200px;
+
+  --breakpoint-tablet-min: 769px;
+  --breakpoint-tablet-max: 1000px;
+
+  --breakpoint-tablet-mini-min: 601px;
+  --breakpoint-tablet-mini-max: 768px;
+
+  --breakpoint-phone-max: 600px;
+  --breakpoint-mobile: 375px;
+}
