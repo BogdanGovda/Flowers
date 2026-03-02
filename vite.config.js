@@ -8,11 +8,7 @@ import fs from 'fs';
 
 const partialDirs = [
   path.resolve(__dirname, 'src/html/components'),
-
-
-
-  
-
+  path.resolve(__dirname, 'src/html/components/header'),
 
 ]
 const pagesDir = path.resolve(__dirname, 'src/html/pages');

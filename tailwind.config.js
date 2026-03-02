@@ -18,7 +18,6 @@ export default {
     '2xl': '1500px', 
     huge: { min: '2000px' },
     big: { max: '1999px' },
-    desktop: { max: '1750px' },
     laptop: { max: '1440px' },
     'table-big': { max: '1200px' },
 

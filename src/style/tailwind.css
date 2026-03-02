@@ -3,6 +3,7 @@
 @theme {
   --color-blackBg: #333;
   --color-purpleLight: #956d84;
+  --color-grayText: #828282;
 }
 
 @theme {
@@ -15,9 +16,9 @@
   --breakpoint-huge: 2000px;
 
   --breakpoint-big-max: 1999px;
-  --breakpoint-desktop-max: 1750px;
-  --breakpoint-laptop-max: 1440px;
-  --breakpoint-table-big-max: 1200px;
+  --breakpoint-desktop: 1750px;
+  --breakpoint-laptop: 1440px;
+  --breakpoint-table-big: 1200px;
 
   --breakpoint-tablet-min: 769px;
   --breakpoint-tablet-max: 1000px;
