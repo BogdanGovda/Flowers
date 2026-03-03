@@ -1,21 +1,71 @@
-<section class="px-[15px]">
-  <div class="swiper">
-    <!-- Additional required wrapper -->
+<section class="px-[15px] mt-[20px] 920:hidden">
+  <div class="swiper mySwiper relative w-full x max-w-[320px] tablet-mini-min:max-w-[400px]">
     <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
+      <div class="swiper-slide relative">
+        <img src="/img/home/homeSlide-mob.webp" alt="sale" class="w-full h-[271px] mob:h-full object-cover">
+
+        <div class="absolute top-8 left-8  max-w-[220px]">
+          <p class="text-[20px] leading-[25px] font-actor pl-[7px] pt-[5px] tracking-[0.6px]">
+            Скидки <span class="text-white">-6%</span> на все букеты
+            <span class="text-white ml-[2px]"> по предзаказу</span> на 8 марта
+          </p>
+        </div>
+      </div>
+
+      <div class="swiper-slide relative">
+        <img src="/img/home/homeSlide2.webp" alt="sale" class="w-full h-[271px] mob:h-full object-cover ">
+      </div>
+      <div class="swiper-slide relative">
+        <img src="/img/home/homeSlide3.webp" alt="sale" class="w-full h-[271px] mob:h-full object-cover ">
+      </div>
+      <div class="swiper-slide relative">
+        <img src="/img/home/homeSlide4.webp" alt="sale" class="w-full h-[271px] mob:h-full object-cover ">
+      </div>
+      <div class="swiper-slide relative">
+        <img src="/img/home/homeSlide5.webp" alt="sale" class="w-full h-[271px] mob:h-full object-cover">
+      </div>
     </div>
-    <!-- If we need pagination -->
+
     <div class="swiper-pagination"></div>
+  </div>
+</section>
+<section class="hidden 920:block mt-[55px]">
+  <div class="men  flex gap-[31px] desktop:pl-[245px] desktop:pr-[254px] px-[20px] table-big:px-[8%]">
+    <div class="item relative">
+      <img src="/img/home/homeSlide1-big.webp" alt="sale" class="w-full max-h-[670px] object-cover">
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+      <div class="absolute top-4 right-6  max-w-[412px]">
+        <p class="text-[36px] leading-[50px] font-actor pl-[7px] pt-[5px] tracking-[0.6px]">
+          Скидки <span class="text-white">-6%</span> на все букеты
+          <span class="text-white ml-[7px] tracking-[1px]"> по предзаказу</span> на 8 марта
+        </p>
+      </div>
+    </div>
+    <div class="list flex flex-col gap-[30px]">
+      <div class="flex gap-[21px]">
+        <div class="item relative">
+          <img src="/img/home/homeSlide2.webp" alt="sale" class="w-full h-[271px] mob:h-full object-cover">
 
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+          <div class="absolute top-8 left-3  max-w-[220px]">
+            <p class="text-[36px] leading-[18px] font-actor pl-[5px] pt-[5px] tracking-[1.5px]">Розы</p>
+          </div>
+        </div>
+        <div class="item relative">
+          <img src="/img/home/homeSlide3.webp" alt="sale" class="w-full h-[271px] mob:h-full object-cover">
+
+          <div class="absolute top-8 left-6  max-w-[220px]">
+            <p class="text-[36px] leading-[18px] font-actor pl-[5px] pt-[5px] tracking-[1px]">Подарки</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-[21px]">
+        <div class="item relative">
+          <img src="/img/home/homeSlide4.webp" alt="sale" class="w-full h-[271px] mob:h-full object-cover">
+        </div>
+        <div class="item relative">
+          <img src="/img/home/homeSlide5.webp" alt="sale" class="w-full h-[271px] mob:h-full object-cover">
+        </div>
+      </div>
+    </div>
   </div>
 </section>

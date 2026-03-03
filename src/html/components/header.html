@@ -3,25 +3,25 @@
   {{>headerTop}}
   {{>headerMenu}}
   <div
-    class="burger-menu
+    class="burger-menu lg:hidden
      -translate-y-full opacity-0 invisible transition-all duration-1000
     ease-in-out  hidden absolute pb-[28px] top-0 w-full z-10 bg-white"
   >
     <div class="title bg-blackBg flex justify-between pl-[20px] pr-[21px] items-center pt-[28px] pb-[28px]">
       <span class="text-white font-actor ext-[14px] leading-[16px]">Меню</span>
       <svg class="w-[14px] h-[14px] burger-close">
-        <use class="" href="#icons-close"/>
+        <use class="" href="#icons-close" />
       </svg>
     </div>
     <div class="call flex items-center justify-between pl-[32px] pr-[16px] pt-[20px]">
       <div class="nunber font-acme text-[16px] leading-[18px]">+38 (067) 111 22 11</div>
       <a
         href="#"
-        class="call relative bg-purpleLight pb-[8px] pt-[9px] px-[28px] pr-[25px] font-actor text-[12px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+        class="call overflow-hidden relative bg-purpleLight pb-[8px] pt-[9px] px-[28px] pr-[25px] font-actor text-[12px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
       >
         Подзвонить
         <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
-          <use class="" href="#icons-btnBg"/>
+          <use class="" href="#icons-btnBg" />
         </svg>
       </a>
     </div>
@@ -34,7 +34,7 @@
         <span class="font-acme text-[17px] leading-[16px]">Закладки</span>
         <button class="font-acme text-[17px] leading-[18px] relative text-purpleLight mr-[24px]" type="button">
           <svg class="w-[26px] h-[26px]   ">
-            <use class="" href="#icons-heart"/>
+            <use class="" href="#icons-heart" />
           </svg>
           <div
             class="like-count
@@ -117,13 +117,13 @@
     </div>
   </div>
   <div
-    class="serch-menu -translate-y-full opacity-0 invisible transition-all duration-1000
+    class="serch-menu lg:hidden -translate-y-full opacity-0 invisible transition-all duration-1000
     ease-in-out hidden  absolute pb-[28px] top-0 w-full z-10 bg-white"
   >
     <div class="title bg-blackBg flex justify-between pl-[20px] pr-[21px] items-center pt-[28px] pb-[28px]">
       <span class="text-white font-actor text-[14px] tracking-[0.5px] leading-[16px]">Категории</span>
       <svg class="w-[14px] h-[14px] serch-close">
-        <use class="" href="#icons-close"/>
+        <use class="" href="#icons-close" />
       </svg>
     </div>
     <div class="nav mt-[10px] px-[15px]">
@@ -139,7 +139,7 @@
         </svg>
       </a>
       <div class="menu border-b border-purpleLight/20">
-        <input type="radio" id="serchList" name="serchList" class="peer hidden">
+        <input type="radio" id="serchList" name="serchList" class="peer hidden" />
 
         <label
           for="serchList"
@@ -292,7 +292,7 @@
         </div>
       </div>
       <div class="menu border-b border-purpleLight/20 mt-[4px]">
-        <input type="radio" id="flower" name="serchList" class="peer hidden">
+        <input type="radio" id="flower" name="serchList" class="peer hidden" />
 
         <label
           for="flower"

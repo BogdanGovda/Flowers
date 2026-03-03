@@ -6,7 +6,7 @@ body {
   padding: 0;
 
   @include huge {
-    margin: 0 10%;
+    margin: 0 7%;
   }
 }
 
@@ -33,4 +33,35 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.swiper-pagination {
+  bottom: 5px !important;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1 !important;
+  position: relative;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, -1px) !important;
+  margin-right: 5px !important;
+  border-radius: 50%;
+  background: transparent !important;
+}
+
+.swiper-pagination-bullet::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.swiper-pagination-bullet-active {
+  border: 1px solid #fff !important;
 }

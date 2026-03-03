@@ -25,7 +25,8 @@
 
   --breakpoint-tablet-mini-min: 601px;
   --breakpoint-tablet-mini-max: 768px;
-
+  --breakpoint-920: 920px;
   --breakpoint-phone-max: 600px;
   --breakpoint-mobile: 375px;
+  --breakpoint-mob: 321px;
 }
