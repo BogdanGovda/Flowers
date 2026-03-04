@@ -4,12 +4,14 @@
   --color-blackBg: #333;
   --color-purpleLight: #956d84;
   --color-grayText: #828282;
+  --color-purpleExtraLight: rgb(157, 117, 140, 0.39);
 }
 
 @theme {
   --font-acme: 'Acme', sans-serif;
   --font-sans: 'PT Sans', sans-serif;
   --font-actor: 'Actor', sans-serif;
+  --font-aguaf: 'AguafinaScript', sans-serif;
 }
 
 @theme {
@@ -17,6 +19,7 @@
 
   --breakpoint-big-max: 1999px;
   --breakpoint-desktop: 1750px;
+  --breakpoint-1720: 1720px;
   --breakpoint-laptop: 1440px;
   --breakpoint-table-big: 1200px;
 
