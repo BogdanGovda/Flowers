@@ -25,30 +25,25 @@ const swiper = new Swiper('.swiper', {
 });
 
 const actionSwiper = new Swiper('.action', {
-  loop: true,
-  spaceBetween: 300,
+  loop: false,
   speed: 600,
   slidesPerView: 1,
+  spaceBetween: 20,
+  allowTouchMove: false,
 
   breakpoints: {
+    700: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
     1200: {
       slidesPerView: 2,
-  spaceBetween: 30,
-
-    },
-    700:{
-  slidesPerView: 1,
-      
+      spaceBetween: 30,
     }
   },
 
   navigation: {
-    nextEl: '.action .swiper-button-next',
-    prevEl: '.action .swiper-button-prev',
-  },
-
-  pagination: {
-    el: '.action .swiper-pagination',
-    clickable: true,
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });

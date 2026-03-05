@@ -1,10 +1,19 @@
 <section>
-  <div
-    class="wrapper px-[17px] pr-[15px] mt-[65px] table-big:mt-[115px] desktop:px-[250px] px-[20px] table-big:px-[8%]"
-  >
-    <div class="title font-actor text-[24px] leading-[18px] text-center tracking-[1.7px] table-big:text-[48px]">
+  <div class="wrapper px-[17px] pr-[15px] mt-[65px] table-big:mt-[115px] desktop:px-[250px]  table-big:px-[8%]">
+    <div
+      class="title relative font-actor text-[24px] leading-[18px] text-center tracking-[1.7px] table-big:text-[48px]"
+    >
       Акции
+      <div class="btm absolute right-0 top-0 ">
+        <div class="swiper-button-prev">
+          <img src="/img/arrowRight.webp" alt="">
+        </div>
+        <div class="swiper-button-next">
+          <img src="/img/arrowLeft.webp" alt="">
+        </div>
+      </div>
     </div>
+
     <div class="swiper action w-full table-big:mt-[60px]">
       <div class="swiper-wrapper">
         <div class="swiper-slide max-w-[700px]">
@@ -13,11 +22,15 @@
     grid 
     grid-cols-2 
     gap-[9px]
+    table-big:gap-[17px]
+    table-big:gap-y-[20px]
     
     "
           >
-            <div class="card border border-purpleLight relative w-full pb-[9px] table-big:pb-[17px]">
-              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] ">
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
                 <div
                   class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
                     table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
@@ -32,11 +45,11 @@
                   <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
                 </div>
                 <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
-                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="" />
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
                 </div>
                 <svg
                   class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
-                table-big:right-[28px] table-big:top-[34px]
+                table-big:right-[21px] table-big:top-[34px]
                 table-big:w-[33px] table-big:h-[28px]"
                 >
                   <use class="" href="#icons-heart"></use>
@@ -45,7 +58,7 @@
                   class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
                   table-big:w-[56px] table-big:h-[56px] 
                   rounded-[50%]
-                  table-big:right-[18px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
                   "
                 >
                   <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
@@ -54,10 +67,10 @@
               <div
                 class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
                 mt-[11px]
-                table-big:pr-[36px] table-big:pl-[26px] table-big:mt-[21px]"
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
               >
                 <div
-                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left"
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
                 >
                   <span class="font-bold ml-[-2px]">101</span>
                   красная роза
@@ -73,7 +86,7 @@
 
                   <div
                     class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
-                  table-big:text-[18px]
+                  table-big:text-[18px] table-big:mt-[4px]
                   "
                   >
                     2280
@@ -107,7 +120,7 @@
                 </button>
                 <button
                   type="button"
-                  class="call overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
                 >
                   Заказать
                   <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
@@ -116,8 +129,10 @@
                 </button>
               </div>
             </div>
-            <div class="card border border-purpleLight relative w-full pb-[9px] table-big:pb-[17px]">
-              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] ">
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
                 <div
                   class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
                     table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
@@ -132,11 +147,11 @@
                   <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
                 </div>
                 <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
-                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="" />
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
                 </div>
                 <svg
                   class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
-                table-big:right-[28px] table-big:top-[34px]
+                table-big:right-[21px] table-big:top-[34px]
                 table-big:w-[33px] table-big:h-[28px]"
                 >
                   <use class="" href="#icons-heart"></use>
@@ -145,7 +160,7 @@
                   class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
                   table-big:w-[56px] table-big:h-[56px] 
                   rounded-[50%]
-                  table-big:right-[18px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
                   "
                 >
                   <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
@@ -154,10 +169,10 @@
               <div
                 class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
                 mt-[11px]
-                table-big:pr-[36px] table-big:pl-[26px] table-big:mt-[21px]"
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
               >
                 <div
-                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left"
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
                 >
                   <span class="font-bold ml-[-2px]">101</span>
                   красная роза
@@ -173,7 +188,7 @@
 
                   <div
                     class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
-                  table-big:text-[18px]
+                  table-big:text-[18px] table-big:mt-[4px]
                   "
                   >
                     2280
@@ -207,7 +222,7 @@
                 </button>
                 <button
                   type="button"
-                  class="call overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
                 >
                   Заказать
                   <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
@@ -216,52 +231,89 @@
                 </button>
               </div>
             </div>
-            <div class="card border border-purpleLight relative w-full pb-[9px]">
-              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] ">
-                <div class="absolute w-[32px] h-[31px] top-[4px] left-[2px] flex items-center justify-center">
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
                   <div
                     class="absolute inset-0 rounded-full 
               bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
               [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
                   ></div>
 
-                  <span class="text-[10px] leading-[18px] fontcme">-19%</span>
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
                 </div>
-                <div class="img w-[112px] h-[124px]">
-                  <img src="/img/home/homeFlower1.webp" alt="" />
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
                 </div>
-                <svg class="w-[13px] h-[12px] absolute top-[10right-[7px] ">
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
                   <use class="" href="#icons-heart"></use>
                 </svg>
                 <div
-                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px]  rounded-[50%]"
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
                 >
-                  <span class="font-aguaf text-[10px] leading-[18px]">TOP</span>
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
                 </div>
               </div>
-              <div class="info flex flex-col justify-center text-center">
-                <div class="title font-acme text-[13px] leading-[18px]   mt-[11px]">
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
                   <span class="font-bold ml-[-2px]">101</span>
                   красная роза
                 </div>
-                <div
-                  class="oldPrice text-center text-grayText font-acme text-[13px] leading-[18px] mt-[11px] line-through"
-                >
-                  2800 грн
-                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
 
-                <div class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight">
-                  2280
-                  <span>грн</span>
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
                 </div>
               </div>
-              <div class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]">
-                <a href="#" class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]"
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
                   >Быстрый заказ</a
                 >
                 <button
                   type="button"
-                  class="w-[35px] overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
                 >
                   <svg class="w-[21px] h-[19px]">
                     <use class="" href="#icons-basketBtn"></use>
@@ -270,60 +322,115 @@
                     <use class="" href="#icons-buyBg"></use>
                   </svg>
                 </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
               </div>
             </div>
-            <div class="card border border-purpleLight relative w-full pb-[9px]">
-              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] ">
-                <div class="absolute w-[32px] h-[31px] top-[4px] left-[2px] flex items-center justify-center">
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
                   <div
                     class="absolute inset-0 rounded-full 
               bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
               [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
                   ></div>
 
-                  <span class="text-[10px] leading-[18px] fontcme">-19%</span>
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
                 </div>
-                <div class="img w-[112px] h-[124px]">
-                  <img src="/img/home/homeFlower2.webp" alt="" />
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
                 </div>
-                <svg class="w-[13px] h-[12px] absolute top-[10right-[7px] ">
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
                   <use class="" href="#icons-heart"></use>
                 </svg>
                 <div
-                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px]  rounded-[50%]"
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
                 >
-                  <span class="font-aguaf text-[10px] leading-[18px]">TOP</span>
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
                 </div>
               </div>
-              <div class="info flex flex-col justify-center text-center">
-                <div class="title font-acme text-[13px] leading-[18px]   mt-[11px]">
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
                   <span class="font-bold ml-[-2px]">101</span>
                   красная роза
                 </div>
-                <div
-                  class="oldPrice text-center text-grayText font-acme text-[13px] leading-[18px] mt-[11px] line-through"
-                >
-                  2800 грн
-                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
 
-                <div class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight">
-                  2280
-                  <span>грн</span>
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
                 </div>
               </div>
-              <div class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]">
-                <a href="#" class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]"
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
                   >Быстрый заказ</a
                 >
                 <button
                   type="button"
-                  class="w-[35px] overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
                 >
                   <svg class="w-[21px] h-[19px]">
                     <use class="" href="#icons-basketBtn"></use>
                   </svg>
                   <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
                     <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
                   </svg>
                 </button>
               </div>
@@ -336,55 +443,94 @@
     grid 
     grid-cols-2 
     gap-[9px]
+    table-big:gap-[17px]
+    table-big:gap-y-[20px]
     
     "
           >
-            <div class="card border border-purpleLight relative w-full pb-[9px]">
-              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] ">
-                <div class="absolute w-[32px] h-[31px] top-[4px] left-[2px] flex items-center justify-center">
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
                   <div
                     class="absolute inset-0 rounded-full 
               bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
               [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
                   ></div>
 
-                  <span class="text-[10px] leading-[18px] fontcme">-19%</span>
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
                 </div>
-                <div class="img w-[112px] h-[124px]">
-                  <img src="/img/home/homeFlower1.webp" alt="" />
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
                 </div>
-                <svg class="w-[13px] h-[12px] absolute top-[10right-[7px] ">
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
                   <use class="" href="#icons-heart"></use>
                 </svg>
                 <div
-                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px]  rounded-[50%]"
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
                 >
-                  <span class="font-aguaf text-[10px] leading-[18px]">TOP</span>
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
                 </div>
               </div>
-              <div class="info flex flex-col justify-center text-center">
-                <div class="title font-acme text-[13px] leading-[18px]   mt-[11px]">
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
                   <span class="font-bold ml-[-2px]">101</span>
                   красная роза
                 </div>
-                <div
-                  class="oldPrice text-center text-grayText font-acme text-[13px] leading-[18px] mt-[11px] line-through"
-                >
-                  2800 грн
-                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
 
-                <div class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight">
-                  2280
-                  <span>грн</span>
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
                 </div>
               </div>
-              <div class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]">
-                <a href="#" class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]"
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
                   >Быстрый заказ</a
                 >
                 <button
                   type="button"
-                  class="w-[35px] overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
                 >
                   <svg class="w-[21px] h-[19px]">
                     <use class="" href="#icons-basketBtn"></use>
@@ -393,54 +539,100 @@
                     <use class="" href="#icons-buyBg"></use>
                   </svg>
                 </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
               </div>
             </div>
-            <div class="card border border-purpleLight relative w-full pb-[9px]">
-              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] ">
-                <div class="absolute w-[32px] h-[31px] top-[4px] left-[2px] flex items-center justify-center">
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
                   <div
                     class="absolute inset-0 rounded-full 
               bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
               [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
                   ></div>
 
-                  <span class="text-[10px] leading-[18px] fontcme">-19%</span>
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
                 </div>
-                <div class="img w-[112px] h-[124px]">
-                  <img src="/img/home/homeFlower2.webp" alt="" />
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
                 </div>
-                <svg class="w-[13px] h-[12px] absolute top-[10right-[7px] ">
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
                   <use class="" href="#icons-heart"></use>
                 </svg>
                 <div
-                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px]  rounded-[50%]"
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
                 >
-                  <span class="font-aguaf text-[10px] leading-[18px]">TOP</span>
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
                 </div>
               </div>
-              <div class="info flex flex-col justify-center text-center">
-                <div class="title font-acme text-[13px] leading-[18px]   mt-[11px]">
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
                   <span class="font-bold ml-[-2px]">101</span>
                   красная роза
                 </div>
-                <div
-                  class="oldPrice text-center text-grayText font-acme text-[13px] leading-[18px] mt-[11px] line-through"
-                >
-                  2800 грн
-                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
 
-                <div class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight">
-                  2280
-                  <span>грн</span>
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
                 </div>
               </div>
-              <div class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]">
-                <a href="#" class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]"
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
                   >Быстрый заказ</a
                 >
                 <button
                   type="button"
-                  class="w-[35px] overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
                 >
                   <svg class="w-[21px] h-[19px]">
                     <use class="" href="#icons-basketBtn"></use>
@@ -449,54 +641,100 @@
                     <use class="" href="#icons-buyBg"></use>
                   </svg>
                 </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
               </div>
             </div>
-            <div class="card border border-purpleLight relative w-full pb-[9px]">
-              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] ">
-                <div class="absolute w-[32px] h-[31px] top-[4px] left-[2px] flex items-center justify-center">
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
                   <div
                     class="absolute inset-0 rounded-full 
               bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
               [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
                   ></div>
 
-                  <span class="text-[10px] leading-[18px] fontcme">-19%</span>
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
                 </div>
-                <div class="img w-[112px] h-[124px]">
-                  <img src="/img/home/homeFlower1.webp" alt="" />
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
                 </div>
-                <svg class="w-[13px] h-[12px] absolute top-[10right-[7px] ">
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
                   <use class="" href="#icons-heart"></use>
                 </svg>
                 <div
-                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px]  rounded-[50%]"
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
                 >
-                  <span class="font-aguaf text-[10px] leading-[18px]">TOP</span>
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
                 </div>
               </div>
-              <div class="info flex flex-col justify-center text-center">
-                <div class="title font-acme text-[13px] leading-[18px]   mt-[11px]">
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
                   <span class="font-bold ml-[-2px]">101</span>
                   красная роза
                 </div>
-                <div
-                  class="oldPrice text-center text-grayText font-acme text-[13px] leading-[18px] mt-[11px] line-through"
-                >
-                  2800 грн
-                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
 
-                <div class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight">
-                  2280
-                  <span>грн</span>
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
                 </div>
               </div>
-              <div class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]">
-                <a href="#" class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]"
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
                   >Быстрый заказ</a
                 >
                 <button
                   type="button"
-                  class="w-[35px] overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
                 >
                   <svg class="w-[21px] h-[19px]">
                     <use class="" href="#icons-basketBtn"></use>
@@ -505,73 +743,966 @@
                     <use class="" href="#icons-buyBg"></use>
                   </svg>
                 </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
               </div>
             </div>
-            <div class="card border border-purpleLight relative w-full pb-[9px]">
-              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] ">
-                <div class="absolute w-[32px] h-[31px] top-[4px] left-[2px] flex items-center justify-center">
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
                   <div
                     class="absolute inset-0 rounded-full 
               bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
               [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
                   ></div>
 
-                  <span class="text-[10px] leading-[18px] fontcme">-19%</span>
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
                 </div>
-                <div class="img w-[112px] h-[124px]">
-                  <img src="/img/home/homeFlower2.webp" alt="" />
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
                 </div>
-                <svg class="w-[13px] h-[12px] absolute top-[10right-[7px] ">
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
                   <use class="" href="#icons-heart"></use>
                 </svg>
                 <div
-                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px]  rounded-[50%]"
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
                 >
-                  <span class="font-aguaf text-[10px] leading-[18px]">TOP</span>
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
                 </div>
               </div>
-              <div class="info flex flex-col justify-center text-center">
-                <div class="title font-acme text-[13px] leading-[18px]   mt-[11px]">
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
                   <span class="font-bold ml-[-2px]">101</span>
                   красная роза
                 </div>
-                <div
-                  class="oldPrice text-center text-grayText font-acme text-[13px] leading-[18px] mt-[11px] line-through"
-                >
-                  2800 грн
-                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
 
-                <div class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight">
-                  2280
-                  <span>грн</span>
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
                 </div>
               </div>
-              <div class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]">
-                <a href="#" class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]"
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
                   >Быстрый заказ</a
                 >
                 <button
                   type="button"
-                  class="w-[35px] overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
                 >
                   <svg class="w-[21px] h-[19px]">
                     <use class="" href="#icons-basketBtn"></use>
                   </svg>
                   <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
                     <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
                   </svg>
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-slide max-w-[700px]">Slide 3</div>
-        ...
+        <div class="swiper-slide max-w-[700px]">
+          <div
+            class="mt-[48px] 
+    grid 
+    grid-cols-2 
+    gap-[9px]
+    table-big:gap-[17px]
+    table-big:gap-y-[20px]
+    
+    "
+          >
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full 
+              bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
+              [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
+                  ></div>
+
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
+                </div>
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
+                </div>
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
+                  <use class="" href="#icons-heart"></use>
+                </svg>
+                <div
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
+                >
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
+                </div>
+              </div>
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
+                  <span class="font-bold ml-[-2px]">101</span>
+                  красная роза
+                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
+
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
+                  >Быстрый заказ</a
+                >
+                <button
+                  type="button"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                >
+                  <svg class="w-[21px] h-[19px]">
+                    <use class="" href="#icons-basketBtn"></use>
+                  </svg>
+                  <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
+                    <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full 
+              bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
+              [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
+                  ></div>
+
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
+                </div>
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
+                </div>
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
+                  <use class="" href="#icons-heart"></use>
+                </svg>
+                <div
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
+                >
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
+                </div>
+              </div>
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
+                  <span class="font-bold ml-[-2px]">101</span>
+                  красная роза
+                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
+
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
+                  >Быстрый заказ</a
+                >
+                <button
+                  type="button"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                >
+                  <svg class="w-[21px] h-[19px]">
+                    <use class="" href="#icons-basketBtn"></use>
+                  </svg>
+                  <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
+                    <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full 
+              bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
+              [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
+                  ></div>
+
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
+                </div>
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
+                </div>
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
+                  <use class="" href="#icons-heart"></use>
+                </svg>
+                <div
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
+                >
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
+                </div>
+              </div>
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
+                  <span class="font-bold ml-[-2px]">101</span>
+                  красная роза
+                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
+
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
+                  >Быстрый заказ</a
+                >
+                <button
+                  type="button"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                >
+                  <svg class="w-[21px] h-[19px]">
+                    <use class="" href="#icons-basketBtn"></use>
+                  </svg>
+                  <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
+                    <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full 
+              bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
+              [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
+                  ></div>
+
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
+                </div>
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
+                </div>
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
+                  <use class="" href="#icons-heart"></use>
+                </svg>
+                <div
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
+                >
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
+                </div>
+              </div>
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
+                  <span class="font-bold ml-[-2px]">101</span>
+                  красная роза
+                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
+
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
+                  >Быстрый заказ</a
+                >
+                <button
+                  type="button"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                >
+                  <svg class="w-[21px] h-[19px]">
+                    <use class="" href="#icons-basketBtn"></use>
+                  </svg>
+                  <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
+                    <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide max-w-[700px]">
+          <div
+            class="mt-[48px] 
+    grid 
+    grid-cols-2 
+    gap-[9px]
+    table-big:gap-[17px]
+    table-big:gap-y-[20px]
+    
+    "
+          >
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full 
+              bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
+              [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
+                  ></div>
+
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
+                </div>
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
+                </div>
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
+                  <use class="" href="#icons-heart"></use>
+                </svg>
+                <div
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
+                >
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
+                </div>
+              </div>
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
+                  <span class="font-bold ml-[-2px]">101</span>
+                  красная роза
+                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
+
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
+                  >Быстрый заказ</a
+                >
+                <button
+                  type="button"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                >
+                  <svg class="w-[21px] h-[19px]">
+                    <use class="" href="#icons-basketBtn"></use>
+                  </svg>
+                  <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
+                    <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full 
+              bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
+              [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
+                  ></div>
+
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
+                </div>
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
+                </div>
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
+                  <use class="" href="#icons-heart"></use>
+                </svg>
+                <div
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
+                >
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
+                </div>
+              </div>
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
+                  <span class="font-bold ml-[-2px]">101</span>
+                  красная роза
+                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
+
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
+                  >Быстрый заказ</a
+                >
+                <button
+                  type="button"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                >
+                  <svg class="w-[21px] h-[19px]">
+                    <use class="" href="#icons-basketBtn"></use>
+                  </svg>
+                  <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
+                    <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full 
+              bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
+              [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
+                  ></div>
+
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
+                </div>
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
+                </div>
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
+                  <use class="" href="#icons-heart"></use>
+                </svg>
+                <div
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
+                >
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
+                </div>
+              </div>
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
+                  <span class="font-bold ml-[-2px]">101</span>
+                  красная роза
+                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
+
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
+                  >Быстрый заказ</a
+                >
+                <button
+                  type="button"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                >
+                  <svg class="w-[21px] h-[19px]">
+                    <use class="" href="#icons-basketBtn"></use>
+                  </svg>
+                  <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
+                    <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="card table-big:max-w-[340px] border border-purpleLight relative w-full pb-[9px] table-big:pb-[15px] table-big:max-h-[544px]"
+            >
+              <div class="head flex justify-center pt-[20px] pr-[11px] pl-[15px] table-big:pt-[24px] ">
+                <div
+                  class="absolute w-[32px] h-[31px] top-[4px] left-[2px]
+                    table-big:w-[56px] table-big:h-[56px] table-big:left-[21px]
+                flex items-center justify-center"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full 
+              bg-[repeating-conic-gradient(red_0deg_20deg,transparent_20deg_40deg)]
+              [mask:radial-gradient(farthest-side,transparent_calc(100%-1px),black_0)]"
+                  ></div>
+
+                  <span class="text-[10px] leading-[18px] font-acme table-big:text-[16px]">-19%</span>
+                </div>
+                <div class="img w-[112px] h-[124px] table-big:w-[272px] table-big:h-[314px]">
+                  <img class="h-full w-full" src="/img/home/homeFlower1.webp" alt="">
+                </div>
+                <svg
+                  class="w-[13px] h-[12px] absolute top-[10px] right-[7px]
+                table-big:right-[21px] table-big:top-[34px]
+                table-big:w-[33px] table-big:h-[28px]"
+                >
+                  <use class="" href="#icons-heart"></use>
+                </svg>
+                <div
+                  class="w-[35px] h-[35px] bg-purpleExtraLight absolute top-[94px] pl-[8px] right-[5px] 
+                  table-big:w-[56px] table-big:h-[56px] 
+                  rounded-[50%]
+                  table-big:right-[13px] table-big:top-[221px] table-big:pl-[13px] table-big:flex table-big:items-center
+                  "
+                >
+                  <span class="font-aguaf text-[10px] leading-[18px] table-big:text-[16px]">TOP</span>
+                </div>
+              </div>
+              <div
+                class="info flex flex-col justify-center text-center table-big:flex-row table-big:justify-between 
+                mt-[11px]
+                table-big:pr-[29px] table-big:pl-[26px]   table-big:mt-[13px]"
+              >
+                <div
+                  class="title font-acme text-[13px] leading-[18px] table-big:text-[18px] table-big:w-[35%] table-big:tracking-[0.6px] table-big:text-left table-big:pt-[5px]"
+                >
+                  <span class="font-bold ml-[-2px]">101</span>
+                  красная роза
+                </div>
+                <div class="price">
+                  <div
+                    class="oldPrice text-center text-grayText font-acme text-[13px]
+                    table-big:text-[18px]
+                    leading-[18px] mt-[11px] table-big:mt-0  line-through"
+                  >
+                    2800 грн
+                  </div>
+
+                  <div
+                    class="newPrice font-actor text-[15px]  leading-[18px] text-purpleLight
+                  table-big:text-[18px] table-big:mt-[4px]
+                  "
+                  >
+                    2280
+                    <span>грн</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="buy flex justify-between pl-[7px] pr-[11px] items-center mt-[10px]
+                table-big:pl-0 table-big:pr-0 table-big:mt-[38px]
+                table-big:flex-col-reverse"
+              >
+                <a
+                  href="#"
+                  class="font-aguaf text-[10px] leading-[18px] underline text-grayText tracking-[0.2px]
+                table-big:mt-[15px]
+                table-big:text-[16px] 
+                "
+                  >Быстрый заказ</a
+                >
+                <button
+                  type="button"
+                  class="w-[35px] table-big:hidden  overflow-hidden relative h-[35px] bg-purpleLight flex justify-center items-center rounded-[50%]"
+                >
+                  <svg class="w-[21px] h-[19px]">
+                    <use class="" href="#icons-basketBtn"></use>
+                  </svg>
+                  <svg class="w-[41px] h-[62px] absolute -top-2 -right-3 transform-[rotate(7deg)]">
+                    <use class="" href="#icons-buyBg"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="call hidden table-big:block overflow-hidden relative bg-purpleLight w-[220px] pb-[23px] pt-[22px] px-[51px] pr-[52px] font-actor text-[16px] leading-[18px] tracking-[0.2px] text-white rounded-[5px]"
+                >
+                  Заказать
+                  <svg class="w-[85px] h-[112px] absolute top-[-15px] right-[-21px] rotate-45 overflow-hidden ">
+                    <use class="" href="#icons-btnBg"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination table-big:hidden"></div>
     </div>
   </div>
 </section>
