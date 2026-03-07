@@ -1,5 +1,7 @@
 @use './fonts' as *;
 @use './basic/variables' as *;
+@use './components/header';
+@use './basic/mixins';
 
 body {
   margin: 0;

@@ -1,36 +1,33 @@
-// import './module/language';
+
 import '../style/fonts.scss';
 import '../style/tailwind.css'
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const burger = document.querySelector('.burger');
+    const burger = document.querySelector('.header-mobile__burger');
     const serchMobile = document.querySelector('.mobile-serch')
-    const menu = document.querySelector('.burger-menu');
+    const menu = document.querySelector('.mobile-menu');
     const menuSerch = document.querySelector('.serch-menu');
 
-    const close = document.querySelector('.burger-close');
+    const close = document.querySelector('.mobile-menu__close');
     const closeSerch = document.querySelector('.serch-close');
 
     
 
     function openMenu() {
-      menu.classList.remove('hidden');
+  requestAnimationFrame(() => {
 
-      requestAnimationFrame(() => {
-        menu.classList.remove('-translate-y-full', 'opacity-0', 'invisible');
-        menu.classList.add('translate-y-0', 'opacity-100', 'visible');
-      });
-    }
+    menu.classList.add('mobile-menu--active');
+    document.body.style.overflow = 'hidden';
+  });
+}
 
-    function closeMenu() {
-      menu.classList.add('-translate-y-full', 'opacity-0', 'invisible');
-      menu.classList.remove('translate-y-0', 'opacity-100', 'visible');
+function closeMenu() {
+  menu.classList.remove('mobile-menu--active');
+  document.body.style.overflow = '';
+}
 
-      setTimeout(() => {
-        menu.classList.add('hidden');
-      }, 500);
-    }
+
     function openSerch(){
       menuSerch.classList.remove('hidden');
 

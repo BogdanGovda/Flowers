@@ -11,25 +11,31 @@
 }
 
 @mixin desktop {
-  @media (max-width: 1750px) {
+  @media (min-width: 1750px) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media (max-width: 1440px) {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin laptop-mini {
+  @media (min-width: 1200px) {
     @content;
   }
 }
 
 @mixin table-big {
-  @media (max-width: 1200px) {
+  @media (min-width: 1024px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (max-width: 1000px) and (min-width: 769px) {
+  @media (min-width: 769px) {
     @content;
   }
 }
@@ -41,15 +47,7 @@
 }
 
 @mixin phone {
-  @media (max-width: 600px) {
+  @media (min-width: 375px) {
     @content;
   }
-}
-
-.text-rgb {
-  display: inline-block;
-  background: linear-gradient(130.1deg, rgb(104, 200, 255), rgb(209, 181, 255) 99%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

@@ -22,68 +22,78 @@ const pages = Object.fromEntries(
     ])
 );
 
-export default defineConfig({
-  root: 'src',
-  // base: '/ArtistNft/',
-  appType: 'mpa',
-  plugins: [
-    hulakPlugins({
-      enableHandlebars: true,
-      handlebarsOptions: {
-        partialDirectory: 'src/html/components',
-      },
-    }),
-    handlebars({
-      partialDirectory: partialDirs,
-      watch: true,
-    }),
-    createHtmlPlugin({
-      minify: false,
-      inject: false,
-    }),
+export default defineConfig(({ mode }) => {
+  const isDeploy = mode === "deploy";
+  const basePath = isDeploy ? "/Flowers/" : "/";
+  return{
 
-    svgSpritePlugin({
-      iconDirs: [path.resolve(process.cwd(), 'src/img/icons')],
-      symbolId: 'icons-[name]',
-      inject: 'body-last',
-      customDomId: 'svg-sprite',
-      svgoConfig: false,
-    }),
-
-    {
-      name: 'hmr-hbs-partials',
-      configureServer(server) {
-        server.watcher.add(partialDirs);
-        server.watcher.on('change', file => {
-          if (partialDirs.some(dir => file.startsWith(dir))) {
-            server.ws.send({ type: 'full-reload' });
-          }
-        });
+    root: 'src',
+     base: basePath,
+    appType: 'mpa',
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "src"),
       },
     },
-  ],
-  server: {
-    watch: {
-      usePolling: true,
-    },
-  },
-
-  build: {
-    minify: 'esbuild',
-    outDir: path.resolve(__dirname, 'dist'),
-    rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'src/index.html'),
-        ...pages
+    plugins: [
+      hulakPlugins({
+        enableHandlebars: true,
+        handlebarsOptions: {
+          partialDirectory: 'src/html/components',
+        },
+      }),
+      handlebars({
+        partialDirectory: partialDirs,
+        watch: true,
+      }),
+      createHtmlPlugin({
+        minify: false,
+        inject: false,
+      }),
+  
+      svgSpritePlugin({
+        iconDirs: [path.resolve(process.cwd(), 'src/img/icons')],
+        symbolId: 'icons-[name]',
+        inject: 'body-last',
+        customDomId: 'svg-sprite',
+        svgoConfig: false,
+      }),
+  
+      {
+        name: 'hmr-hbs-partials',
+        configureServer(server) {
+          server.watcher.add(partialDirs);
+          server.watcher.on('change', file => {
+            if (partialDirs.some(dir => file.startsWith(dir))) {
+              server.ws.send({ type: 'full-reload' });
+            }
+          });
+        },
       },
-      output: {
-        entryFileNames: 'js/[name].js',
-        chunkFileNames: 'js/[name].js',
-        assetFileNames: ({ name }) => {
-          if (name && name.endsWith('.css')) return 'css/[name].css';
-          return 'assets/[name][extname]';
+    ],
+    server: {
+      watch: {
+        usePolling: true,
+      },
+    },
+  
+    build: {
+      minify: 'esbuild',
+      outDir: path.resolve(__dirname, 'dist'),
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'src/index.html'),
+          ...pages
+        },
+        output: {
+          entryFileNames: 'js/[name].js',
+          chunkFileNames: 'js/[name].js',
+          assetFileNames: ({ name }) => {
+            if (name && name.endsWith('.css')) return 'css/[name].css';
+            return 'assets/[name][extname]';
+          },
         },
       },
     },
-  },
+  }
 });

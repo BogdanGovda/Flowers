@@ -1,0 +1,57 @@
+@use '@/style/basic/mixins' as *;
+@use '@/style/basic/variables' as *;
+
+.promo {
+  &__wrapper {
+    margin-top: 67px;
+    padding: 0 15px 0 17px;
+  }
+
+  &__header {
+    position: relative;
+    font-family: $actor;
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: 1.7px;
+    text-align: center;
+
+    @include table-big {
+      font-size: 48px;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 5%;
+    gap: 10px;
+
+    @include table-big {
+      display: block;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+
+    @include table-big {
+      margin-top: 60px;
+    }
+  }
+
+  &__slide {
+    max-width: 700px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-column: 2;
+    gap: 9px;
+    margin-top: 48px;
+  }
+
+  &-card {
+    position: relative;
+  }
+}

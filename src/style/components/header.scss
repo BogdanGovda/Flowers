@@ -1,0 +1,644 @@
+@use '@/style/basic/mixins' as *;
+@use '@/style/basic/variables' as *;
+
+.header-top {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -1px;
+    padding: 4px 15px 3px;
+    background: $blackBg;
+
+    @include table-big {
+      padding: 14px 20px 12px;
+    }
+
+    @include laptop-mini {
+      padding: 14px 8% 12px;
+    }
+
+    @include desktop {
+      padding: 14px 255px 12px 250px;
+    }
+  }
+
+  &__reg {
+    display: none;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    @include table-big {
+      display: flex;
+    }
+
+    .header-top__login {
+      display: flex;
+      align-items: center;
+      font-family: $acme;
+      font-size: 16px;
+      line-height: 18px;
+      color: white;
+
+      .header-top__line {
+        display: block;
+        width: 1px;
+        height: 14px;
+        margin-right: 2px;
+        margin-left: 9px;
+      }
+
+      a {
+        &:nth-child(3) {
+          letter-spacing: 0.4px;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 0;
+
+    @include table-big {
+      flex: none;
+      gap: 23px;
+    }
+
+    @include desktop {
+      gap: 63px;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    @include table-big {
+      order: 1;
+    }
+
+    span {
+      display: none;
+      gap: 6px;
+      font-family: $acme;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.4px;
+      color: white;
+
+      @include table-big {
+        display: block;
+      }
+    }
+  }
+
+  &__price-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: $acme;
+    font-size: 16px;
+    line-height: 18px;
+    color: $purpleLight;
+
+    svg {
+      width: 7px;
+      height: 4px;
+    }
+
+    @include table-big {
+      gap: 6px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &__line {
+    width: 1px;
+    height: 21px;
+    margin: 0 23px 0 20px;
+    background: $purpleLight;
+
+    &:nth-child(7) {
+      margin: 0 19px;
+    }
+
+    @include table-big {
+      display: none;
+    }
+  }
+
+  &__city {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    margin-left: -4px;
+    font-family: $acme;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    color: white;
+
+    @include table-big {
+      order: 3;
+      display: flex;
+    }
+  }
+
+  &__city-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: $acme;
+    font-size: 16px;
+    line-height: 18px;
+    color: $purpleLight;
+
+    svg {
+      width: 7px;
+      height: 4px;
+    }
+  }
+
+  &__favorite {
+    display: none;
+    align-items: center;
+    gap: 27px;
+    font-family: $acme;
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+
+    .favorite {
+      position: relative;
+      font-family: $acme;
+      font-size: 17px;
+      line-height: 18px;
+      color: $purpleLight;
+
+      svg {
+        width: 18px;
+        height: 16px;
+      }
+    }
+
+    .favorite-count {
+      opacity: 0.5;
+      position: absolute;
+      top: -4px;
+      right: -12px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      font-family: $acme;
+      font-size: 12px;
+      color: black;
+      text-align: center;
+      background: white;
+    }
+
+    @include table-big {
+      order: 4;
+      display: flex;
+    }
+  }
+
+  &__car {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include phone {
+      gap: 9px;
+    }
+
+    svg {
+      width: 16px;
+      height: 12px;
+
+      @include table-big {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    span {
+      width: 80%;
+      font-family: $acme;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: 0.25px;
+      color: white;
+      text-align: right;
+
+      @include phone {
+        width: 100%;
+      }
+
+      @include table-big {
+        font-size: 16px;
+        letter-spacing: 0.4px;
+      }
+    }
+
+    @include table-big {
+      order: 5;
+    }
+
+    @include laptop-mini {
+      gap: 18px;
+    }
+  }
+
+  &__contacts {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    span {
+      font-family: $acme;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.6px;
+      color: white;
+      text-align: right;
+    }
+
+    @include table-big {
+      order: 6;
+      display: flex;
+    }
+  }
+
+  &__language {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include table-big {
+      order: 2;
+    }
+
+    span {
+      display: none;
+      font-family: $acme;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.4px;
+      color: white;
+
+      @include table-big {
+        display: block;
+      }
+    }
+  }
+
+  &__language-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: $acme;
+    font-size: 16px;
+    line-height: 18px;
+    color: $purpleLight;
+
+    svg {
+      width: 7px;
+      height: 4px;
+    }
+  }
+}
+
+.header-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 17px 0 15px;
+
+  @include table-big {
+    display: none;
+  }
+
+  &__burger {
+    svg {
+      width: 30px;
+      height: 18px;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 83px;
+      height: 78px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 19px;
+  }
+
+  &__serch {
+    svg {
+      width: 18px;
+      height: 19px;
+    }
+  }
+
+  &__basket {
+    position: relative;
+
+    svg {
+      width: 25px;
+      height: 23px;
+    }
+
+    .basket-count {
+      position: absolute;
+      top: -3px;
+      right: -2px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      font-family: $sans;
+      font-size: 8px;
+      color: white;
+      text-align: center;
+      background: $purpleLight;
+    }
+  }
+}
+
+.header {
+  display: none;
+
+  @include table-big {
+    display: block;
+  }
+  padding-top: 28px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    @include table-big {
+      padding: 0 20px;
+    }
+
+    @include laptop-mini {
+      padding: 0 8%;
+    }
+
+    @include desktop {
+      padding: 0 250px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    gap: 60px;
+
+    @include laptop {
+      gap: 112px;
+    }
+  }
+
+  &__logo {
+    width: 129px;
+    height: 115px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__menu {
+    margin-top: 24px;
+  }
+
+  &__search {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__dropdown {
+    width: 219px;
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $purpleLight;
+      font-family: $acme;
+      font-size: 15px;
+      line-height: 22px;
+      color: $grayText;
+    }
+
+    &-icon {
+      width: 10px;
+      height: 5px;
+    }
+  }
+
+  &__search-input {
+    position: relative;
+    width: 370px;
+
+    @include laptop-mini {
+      width: 420px;
+    }
+
+    @include desktop {
+      width: 581px;
+    }
+
+    input {
+      width: 100%;
+      padding: 0 16px 6px 0;
+      border-bottom: 1px solid $purpleLight;
+      font-family: $acme;
+      font-size: 15px;
+      line-height: 22px;
+
+      &::placeholder {
+        color: $grayText;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    width: 18px;
+    height: 19px;
+    transform: translateY(-50%);
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 38px;
+  }
+
+  &__catalog {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: $acme;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+
+    &:hover {
+      cursor: pointer;
+      color: $purpleLight;
+    }
+
+    svg {
+      width: 10px;
+      height: 5px;
+    }
+  }
+
+  &__link {
+    font-family: $actor;
+    font-size: 16px;
+
+    &:hover {
+      color: $purpleLight;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: $actor;
+    letter-spacing: 0.4px;
+
+    &:hover {
+      color: $purpleLight;
+    }
+
+    svg {
+      width: 10px;
+      height: 5px;
+    }
+  }
+
+  &__right {
+    text-align: right;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+
+    svg {
+      width: 17px;
+      height: 14px;
+    }
+
+    &-item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      background: $purpleLight;
+    }
+  }
+
+  &__phone {
+    margin-top: 20px;
+    padding-right: 15px;
+    font-family: $acme;
+    font-size: 16px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 18px;
+  }
+
+  &__favorite {
+    position: relative;
+    color: $purpleLight;
+
+    svg {
+      width: 33px;
+      height: 29px;
+    }
+  }
+
+  &__favorite-count {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background: $purpleLight;
+  }
+
+  &__basket {
+    position: relative;
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__basket-count {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    background: $purpleLight;
+  }
+
+  &__price {
+    font-family: $acme;
+    font-size: 16px;
+    color: $grayText;
+  }
+}

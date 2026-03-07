@@ -1,0 +1,276 @@
+@use '@/style/basic/mixins' as *;
+@use '@/style/basic/variables' as *;
+
+.features-mobile {
+  margin-top: 31px;
+  padding: 0 15px;
+
+  @include table-big {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91px;
+    height: 91px;
+    border: 1px solid $purpleLight;
+    border-radius: 50%;
+  }
+
+  &__svg {
+    width: 46px;
+    height: 46px;
+    color: $purpleLight;
+
+    &--small {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &__text {
+    margin-top: 13px;
+    font-family: $acme;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.3px;
+  }
+}
+
+.features-desctop {
+  display: none;
+  margin-top: 45px;
+
+  @include table-big {
+    display: block;
+  }
+
+  &__container {
+    padding: 0 20px;
+
+    @include laptop-mini {
+      padding: 0 8%;
+    }
+
+    @include desktop {
+      padding: 0 250px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include laptop {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    gap: 20px;
+  }
+
+  &__card {
+    overflow: hidden;
+    position: relative;
+    width: 460px;
+    min-width: 418px;
+    height: 219px;
+    border: 1px solid #956d84;
+    background: white;
+
+    &--photo {
+      .features-desctop__decor {
+        top: -4px;
+        right: -22px;
+        height: 299px;
+        transform: rotate(350deg) scaleX(-1);
+      }
+
+      .features-desctop__text {
+        letter-spacing: 0.5px;
+      }
+
+      .features-desctop__title {
+        letter-spacing: 0.4px;
+      }
+    }
+
+    &--gift {
+      .feares-desctop__content {
+        position: relative;
+        display: flex;
+        top: 28px;
+        right: 21px;
+        justify-content: end;
+      }
+
+      .features-desctop__item {
+        max-width: 260px;
+        margin-top: 31px;
+        text-align: right;
+      }
+
+      .features-desctop__xt {
+        margin-top: 13px;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        color: $grayText;
+      }
+
+      .features-desctop__decor {
+        top: 2px;
+        left: -21px;
+        width: auto;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background: $purpleLight;
+
+    &--left {
+      clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 100%,
+        72% 100%,
+        71% 99%,
+        67% 94%,
+        68% 96%,
+        65% 89%,
+        61% 80%,
+        54% 57%,
+        51% 45%,
+        48% 35%,
+        47% 33%,
+        43% 23%,
+        31% 8%,
+        29% 7%,
+        20% 1%
+      );
+    }
+
+    &--right {
+      clip-path: polygon(
+        100% 0%,
+        0% 0%,
+        0% 100%,
+        28% 100%,
+        29% 99%,
+        33% 94%,
+        32% 96%,
+        35% 89%,
+        39% 80%,
+        46% 57%,
+        49% 45%,
+        52% 35%,
+        53% 33%,
+        57% 23%,
+        69% 8%,
+        71% 7%,
+        80% 1%
+      );
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: white;
+
+    &--right {
+      top: 24px;
+      right: 35px;
+    }
+
+    &--left {
+      top: 24px;
+      left: 35px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    max-width: 260px;
+    padding: 24px;
+    padding-top: 55px;
+
+    &--right {
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+
+  &__center {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    flex-direction: column;
+    padding-top: 18px;
+    text-align: center;
+
+    .features-desctop__title {
+      margin-top: 9px;
+      color: white;
+    }
+
+    .features-desctop__icon {
+      position: relative;
+    }
+
+    .features-desctop__text {
+      margin-top: 14px;
+      letter-spacing: 0.5px;
+      color: white;
+    }
+  }
+
+  &__title {
+    font-family: $acme;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 0.6px;
+  }
+
+  &__text {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $grayText;
+  }
+
+  &__decor {
+    position: absolute;
+
+    &--right {
+      top: -88px;
+      right: -56px;
+      transform: rotate(350deg) scaleX(-1);
+    }
+
+    &--left {
+      top: -63px;
+      left: -38px;
+      width: 243px;
+      transform: rotate(18deg);
+    }
+  }
+}

@@ -47,3 +47,4 @@ const actionSwiper = new Swiper('.action', {
     prevEl: '.swiper-button-prev',
   },
 });
+
